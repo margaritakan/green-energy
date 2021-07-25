@@ -1,0 +1,213 @@
+/* Colors: 
+        Green: #5EA81E
+        Blue: #D6E9FF
+
+
+Fonts: 
+        font-family: 'Alfa Slab One', Helvetica, Arial, sans-serif;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+*/
+
+/********************************************************
+                    MOBILE PORTRAIT
+********************************************************/
+
+/* General  */
+body, main {
+        margin: 0;
+        box-sizing: border-box;
+}
+
+img {
+        max-width: 100%;
+        height: auto;
+}
+
+h1, h2, h3, h4, h5 { 
+        font-family: 'Alfa Slab One', Helvetica, Arial, sans-serif;
+        color: #5EA81E;
+        line-height: 1.6rem;
+}
+
+p {
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        line-height: 1.5rem;
+        font-size: 0.75rem;
+}
+
+.container {
+        max-width: 60rem;
+        margin: 0 auto;
+        padding: 1rem;
+}
+
+/* Header  */
+h1 {
+        text-align: center;
+        font-size: 2.25rem;
+}
+
+h3 {
+        text-align: center;
+        margin: 1rem;
+}
+
+.masthead {
+        background:url(../img/head-ph.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+
+.masthead h2 {
+        margin: 1rem;
+        
+        font-size: 1.4rem;
+        width: 100%;
+
+        margin: 0 auto;
+
+        color: #FFFFFF;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        font-weight: bold;
+}
+
+/* Navigation  */
+.main-menu-desktop {
+    display: none;
+}
+
+.main-menu-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem 3rem;
+}
+
+.main-menu-mobile ul li {
+        background: #D6E9FF70;
+        padding: 1rem;
+}
+
+.main-menu-mobile ul li a {
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        font-size: 1rem;
+        color: #000;
+
+        text-decoration: none;
+        text-transform: uppercase;
+}
+
+.main-menu-mobile ul .separator {
+        width: 1.6rem; 
+        height: 0.23rem;
+        background-color: #000000;
+        padding: 0;
+        margin: 0 auto;
+        background-color: #D6E9FF70;
+}
+
+/* Body  */
+
+article .container .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin: 0.5rem;
+}
+
+article .container .buttons button {
+        width: 100%;
+        height: 3rem;
+        margin: 0.5rem;
+        background-color: #D6E9FF;
+        border: #D6E9FF;
+
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+}
+
+article .container .buttons button.active {
+        background-color: #5EA81E;
+}
+
+/* Footer  */
+footer {
+        text-align: center;
+        font-weight: bold;
+        
+        padding-bottom: 1rem;
+}
+
+footer i {
+        color: #5EA81E;
+}
+
+/********************************************************
+                Tablet, Laptop and up 30rem
+********************************************************/
+@media only screen and (min-width: 30rem) {
+        /* General  */
+        p {
+                font-size: 1rem;
+        }
+
+        /* Header  */
+        .masthead {
+                height: 40rem;
+        }
+
+        /* Navigation */
+        .main-menu-mobile {
+                display: none;
+        }
+        
+        .main-menu-desktop {
+                display: block;
+                text-align: center;
+        }
+        
+        .main-menu-desktop ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                font-family: 'Lato', Helvetica, Arial, sans-serif;
+                text-transform: uppercase;
+
+                background: #D6E9FF70;
+        }
+
+        .main-menu-desktop ul li {
+                margin: 1rem;
+                float: left;
+        }
+
+        .main-menu-desktop ul li a {
+                text-decoration: none;
+                color: #000000;
+        }
+
+        /* Body  */
+        article .container .buttons {
+                flex-direction: row;
+                justify-content: space-around;
+                max-width: 100%;
+        }
+
+        article .container .buttons button {
+                height: 5rem;
+                margin: 1rem;
+
+                background-color: #D6E9FF;
+        }
+
+        article .container img {
+                float: left;
+                max-width: 25%;
+                margin-right: 1rem;
+                margin-bottom: 1rem;
+        }
+}
